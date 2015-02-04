@@ -4,9 +4,9 @@
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
-using System;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using System;
 using System.CodeDom.Compiler;
 
 namespace MvvmCrossDemo.iOS
@@ -14,6 +14,10 @@ namespace MvvmCrossDemo.iOS
 	[Register ("MvvmCrossDemo_iOSViewController")]
 	partial class MvvmCrossDemo_iOSViewController
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel cachedItemLabel { get; set; }
+
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel containerLabel { get; set; }
@@ -32,6 +36,10 @@ namespace MvvmCrossDemo.iOS
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (cachedItemLabel != null) {
+				cachedItemLabel.Dispose ();
+				cachedItemLabel = null;
+			}
 			if (containerLabel != null) {
 				containerLabel.Dispose ();
 				containerLabel = null;

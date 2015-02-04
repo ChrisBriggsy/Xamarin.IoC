@@ -26,6 +26,7 @@ namespace MvvmCrossDemo.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Splat.Resource.String.library_name = global::MvvmCrossDemo.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -59,6 +60,9 @@ namespace MvvmCrossDemo.Droid
 		
 		public partial class Id
 		{
+			
+			// aapt resource value: 0x7f050004
+			public const int cachedItemText = 2131034116;
 			
 			// aapt resource value: 0x7f050001
 			public const int containerTextView = 2131034113;
@@ -101,11 +105,14 @@ namespace MvvmCrossDemo.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f040002
+			public const int app_name = 2130968578;
+			
 			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			public const int hello = 2130968577;
 			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int library_name = 2130968576;
 			
 			static String()
 			{

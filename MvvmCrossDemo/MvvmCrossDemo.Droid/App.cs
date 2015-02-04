@@ -4,6 +4,7 @@ using Android.Runtime;
 using Cirrious.CrossCore;
 using IoCDemo.Core;
 using Cirrious.CrossCore.IoC;
+using Akavache;
 
 namespace MvvmCrossDemo.Droid
 {
@@ -16,7 +17,10 @@ namespace MvvmCrossDemo.Droid
 
 		public override void OnCreate()
 		{
-			MvxSimpleIoCContainer.Initialize ();
+            BlobCache.ApplicationName = "MahTestApp";
+            BlobCache.EnsureInitialized();
+            MvxSimpleIoCContainer.Initialize ();
+            Mvx.RegisterSingleton<IBlobCache>(() => BlobCache.LocalMachine);
 			Mvx.RegisterType<IPlatform, DroidPlatform> ();
 			Mvx.RegisterType<ISettings, DroidSettings> ();
 

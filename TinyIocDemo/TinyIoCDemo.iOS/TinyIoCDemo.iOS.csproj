@@ -25,6 +25,7 @@
     <MtouchI18n>
     </MtouchI18n>
     <MtouchArch>i386</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -110,7 +111,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="TinyIoC.cs" />
     <Compile Include="TinyIoCDemo.iOSViewController.cs" />
     <Compile Include="TinyIoCDemo.iOSViewController.designer.cs">
       <DependentUpon>TinyIoCDemo.iOSViewController.cs</DependentUpon>
@@ -118,6 +118,7 @@
     <Compile Include="App.cs" />
     <Compile Include="Implementations\ApplePlatform.cs" />
     <Compile Include="Implementations\AppleSettings.cs" />
+    <Compile Include="TinyIoC.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

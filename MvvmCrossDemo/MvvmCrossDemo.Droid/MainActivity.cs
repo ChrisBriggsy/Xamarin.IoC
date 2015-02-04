@@ -25,13 +25,15 @@ namespace MvvmCrossDemo.Droid
 			var userName = viewModel.UserName;
 			var password = viewModel.Password;
 			var container = viewModel.ContainerName;
-
+            var cachedItem = viewModel.MyRandomCachedItem;
 			Console.WriteLine ("Platform:{0} Container:{1} UserName:{2} Password:{3}", platformName, container, userName, password);
 
 			FindViewById<TextView> (Resource.Id.platformTextView).Text = "Platform : " + platformName;
 			FindViewById<TextView> (Resource.Id.containerTextView).Text = "Container : " + container;
 			FindViewById<TextView> (Resource.Id.userNameTextView).Text = "UserName : " + userName;
 			FindViewById<TextView> (Resource.Id.passwordText).Text = "Password : " + password;
+            FindViewById<TextView> (Resource.Id.cachedItemText).Text = "Cached Item : " + cachedItem;
+
 		}
 	}
 }

@@ -102,7 +102,7 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="Ninject">
-      <HintPath>..\..\packages\Portable.Ninject.3.3\lib\monotouch\Ninject.dll</HintPath>
+      <HintPath>..\..\packages\Portable.Ninject.3.3.1\lib\monotouch\Ninject.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
